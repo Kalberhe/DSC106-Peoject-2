@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8">
     <title>Project 2 Report</title>
     <style>
       :root {
@@ -148,26 +149,39 @@
         Persuasive or Deceptive Visualization?
       </h1>
 
-      <p><strong>Your Name</strong> — <em>Your UCSD Email Address</em></p>
+      <p><strong>Ho Lim</strong> · <em>hol050@ucsd.edu</em></p>
+      <p><strong>Kalkidan Gebrekirstos</strong> · <em>kgebrekirstos@ucsd.edu</em></p>
+      <p><strong>Nabila Qotrunnada</strong> · <em>nqotrunnada@ucsd.edu</em></p>
     </header>
 
     <main>
-      <h2>Proposition: [STATE PROPOSITION]</h2>
+      <h2>Proposition: Global emissions continue to rise despite climate pledges.</h2>
 
       <section>
         <h3>FOR the Proposition</h3>
 
         <figure>
-          <img src="g7.png" alt="Greenhouse Gas Emissions are finally decreasing due to climate action"
+          <img src="world.png" alt="Greenhouse Gas Emissions continue to climb after 2015 Paris climate pledges"
      style="max-width:800px;width:95%;height:auto;display:block;margin:0 auto;" />
         </figure>
 
         <p>Design Decisions and Rationale:</p>
 
         <ul>
-          <li>RATIONALE_1</li>
-          <li>RATIONALE_2</li>
-          <li>RATIONALE_3</li>
+          <li><strong>Global dataset including all regions (Score = 2)</strong><br>
+          Using complete world data gives a truthful, inclusive picture. It contrasts with the selective G7 focus and highlights that total emissions are still increasing despite pledges.</li>
+
+          <li><strong>Extended timeline (2010–2023) (Score = 1.5)</strong><br>
+          Displaying both pre- and post-Paris years captures the longer trend, including recovery after the 2020 COVID-19 dip. It prevents misinterpretation that short-term declines equal lasting change.</li>
+
+          <li><strong>Event annotations (Paris Agreement 2015 and COVID-19 2020) (Score = 2)</strong><br>
+          Labeling these years provides clear reference points and helps viewers connect fluctuations with real-world causes. It increases interpretive transparency.</li>
+
+          <li><strong>Slightly truncated y-axis (~45k–52k Mt CO₂-eq) (Score = −0.5)</strong><br>
+          The reduced vertical scale makes the upward trend appear steeper. It strengthens the persuasive “still rising” message but introduces mild exaggeration.</li>
+
+          <li><strong>Color and tone (Score = 1)</strong><br>
+          Using red conveys urgency and danger, signaling that global emissions remain a critical issue. The neutral, descriptive title supports factual interpretation while the color naturally draws concern. This balance makes the visualization persuasive yet ethically grounded.</li>
         </ul>
       </section>
 
@@ -175,23 +189,42 @@
         <h3>AGAINST the Proposition</h3>
 
         <figure>
-          <img src="world.png" alt="Global Greenhouse Gas Emissions Over Time"
+          <img src="g7.png" alt="Greenhouse Gas Emissions are finally decreasing after Paris Climate Agreement"
      style="max-width:800px;width:95%;height:auto;display:block;margin:0 auto;" />
         </figure>
 
         <p>Design Decisions and Rationale:</p>
 
         <ul>
-          <li>RATIONALE_1</li>
-          <li>RATIONALE_2</li>
-          <li>RATIONALE_3</li>
+          <li><strong>Regional filter: showing only G7 economies (Score = −1.5)</strong><br>
+          Limiting data to the G7 hides rising emissions from developing regions. This framing gives an impression of global success while it actually represents a small, advanced subset. Using global data would make the chart more balanced.</li>
+
+          <li><strong>Narrow time window (2010–2020) (Score = −2)</strong><br>
+          Cropping the x-axis removes earlier decades when emissions were higher. It creates the illusion of a consistent downward trend, reinforcing the “finally decreasing” narrative. A longer range (1990–2020) would show that recent declines are modest historically.</li>
+
+          <li><strong>Tight y-axis range (19k-25k Mt CO₂-eq) (Score = −1)</strong><br>
+          Compressing the vertical scale exaggerates the slope of decline and makes the change look more dramatic than it is. A full-scale axis would lessen this visual exaggeration.</li>
+
+          <li><strong>Vertical line for Paris Agreement (2015) (Score = 2)</strong><br>
+          Annotating 2015 adds clear policy context, helping viewers link decline with the start of international action. It’s an earnest way to anchor interpretation in real events.</li>
+
+          <li><strong>Color and title framing (Score = −1)</strong><br>
+          Using green suggests progress and stability, reinforcing the optimistic message implied by the title “finally decreasing due to climate action.” The wording primes viewers to interpret the trend as positive before analyzing the data. A neutral color and simpler title would reduce bias.</li>
         </ul>
       </section>
 
       <section>
         <h2>Final Reflection</h2>
 
-        <p>[WRITE FINAL REFLECTION PARAGRAPHS HERE.]</p>
+        <p>
+          We explored the climate indicators dataset, built quick profiles of regions, and then stated a clear proposition: global emissions continue to rise despite climate pledges. We designed two opposing visuals from the same topic. The world view argues that the proposition is true. The G7 view argues that it is false. The straightforward parts were preparing tidy time series and keeping the visuals readable. The hard parts were deciding how much context to add without clutter and how to keep persuasion strong while making our choices transparent.
+        </p>
+        <p>
+          This work showed how small choices change meaning. A global roll-up across all regions supports the “still rising” story. A selective G7 filter supports the “declining” story. A tight y-range makes slopes feel steeper. A narrow year window makes a decline feel sustained. Clear event markers like the Paris 2015 line help readers reason about timing. Color also shaped perception. We used red to suggest urgency for the world trend and green to suggest progress for the G7 trend. Together these choices were persuasive, yet we documented them so the reader can judge the trade-offs.
+        </p>
+        <p>
+          We define ethical visualization as persuasive storytelling that keeps the reader oriented to scope, units, methods, and limits. Acceptable persuasion includes clear titles, readable encodings, stated filters, and concise annotations. Misleading choices hide scope, distort scales in extreme ways, or rely on charged wording that tells viewers what to think. To stay accountable we named possible deception, gave scores for each choice, and linked visual features to intent. This balance made our figures convincing without undermining trust.
+        </p>
       </section>
     </main>
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"c822b88e119346678db149ed7b7721c9","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
